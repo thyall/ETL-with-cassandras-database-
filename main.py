@@ -4,7 +4,6 @@ import numpy as np
 import pyodbc
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
     # establishing connection
@@ -37,5 +36,5 @@ if __name__ == '__main__':
     df['Score'] = (df.bad.astype(int) + df.ok.astype(int) + df.good.astype(int))/3
 
     # save the dataframes in csv
-    df.to_csv('/datas/data_cassandra.csv')
-    df_kendrick.to_csv('/datas/kendrick_view.csv')
+    df.to_csv('data_cassandra.csv')
+    df_kendrick.to_csv('kendrick_view.csv')
